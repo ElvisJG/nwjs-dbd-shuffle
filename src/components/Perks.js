@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "../hooks/useParams";
 
 export const Perks = ({ perks }) => {
-  console.log(perks);
   const side = useParams();
   return (
     <div className="perks-container">

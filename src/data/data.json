@@ -56,7 +56,7 @@
         "Bill": ["Left Behind", "Borrowed Time", "Unbreakable"],
         "Feng": ["Technician", "Lithe", "Alert"],
         "David": ["We're Gonna Live Forever", "Dead Hard", "No Mither"],
-        "Quentin": ["Wake Up!", "Pharmacy", "Vigil"],
+        "Quentin": ["Wake Up", "Pharmacy", "Vigil"],
         "Tapp": ["Tenacity", "Detective's Hunch", "Stake Out"],
         "Kate": ["Dance With Me", "Windows of Opportunity", "Boil Over"],
         "Adam": ["Diversion", "Deliverance", "Autodidact"],
@@ -69,7 +69,7 @@
         "Zarina": ["Off the Record", "Red Herring", "For the People"]
       },
       "killer": {
-        "Trapper": ["", "", ""],
+        "Trapper": ["Unnerving Presence", "", ""],
         "Wraith": ["", "", ""],
         "Hillbilly": ["", "", ""],
         "Nurse": ["", "", ""],

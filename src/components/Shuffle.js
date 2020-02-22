@@ -5,7 +5,6 @@ import { CharacterImg } from "./CharacterImg";
 
 export const Shuffle = ({ characters, side, perks }) => {
   const sideSelector = side.toLowerCase();
-  console.log(side);
   const shuffle = characters;
   const theme = side === "Killer" ? "error" : "success";
   const pickRandom = c => setCharacter(c[Math.floor(Math.random() * c.length)]);
