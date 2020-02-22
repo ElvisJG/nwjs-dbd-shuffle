@@ -35,6 +35,15 @@
     ]
   },
   "main": "index.html",
+  "window": {
+    "width": 640,
+    "height": 400,
+    "min-width": 640,
+    "min-height": 400,
+    "max-width": 640,
+    "max-height": 400,
+    "position": "mouse"
+  },
   "nwBuilder": {
     "//": "https://github.com/nwjs-community/nw-builder",
     "platforms": [

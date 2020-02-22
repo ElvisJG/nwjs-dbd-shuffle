@@ -12,9 +12,9 @@ export const Shuffle = () => {
     `Click to choose a random ${cap(choice)}`
   );
   return (
-    <div style={{ width: "100%" }}>
+    <div className="shuffle-container">
       <div className="nes-container">
-        <div className="nes-container is-rounded is-dark is-centered with-title">
+        <div className="nes-container is-rounded is-dark is-centered with-title shuffle">
           <p className="title">Shuffling {cap(choice)}'s</p>
           <button
             onClick={() => pickRandom(characters[choice])}
@@ -32,9 +32,11 @@ export const Shuffle = () => {
             )}
             <h1 className="nes-text is-primary">{cap(character)}</h1>
           </div>
+          <Link to="/" className="back">
+            Home
+          </Link>
         </div>
       </div>
-      <Link to="/">Home</Link>
     </div>
   );
 };
