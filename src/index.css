@@ -8,3 +8,16 @@
   font-family: "Squada One";
   letter-spacing: 2px;
 }
+
+.char-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  width: 150px;
+  height: 150px;
+  margin: 2rem 0 1rem;
+}

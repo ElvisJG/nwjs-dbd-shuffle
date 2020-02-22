@@ -1,0 +1,48 @@
+{
+  "characters": {
+    "killer": [
+      "trapper",
+      "wraith",
+      "hillbilly",
+      "nurse",
+      "michael",
+      "hag",
+      "doctor",
+      "huntress",
+      "bubba",
+      "freddy",
+      "pig",
+      "clown",
+      "spirit",
+      "legion",
+      "plague",
+      "ghost face",
+      "demogorgon",
+      "oni",
+      "deathslinger"
+    ],
+    "survivor": [
+      "dwight",
+      "meg",
+      "claudette",
+      "jake",
+      "nea",
+      "laurie",
+      "ace",
+      "bill",
+      "feng",
+      "david",
+      "quentin",
+      "david",
+      "kate",
+      "adam",
+      "jeff",
+      "jane",
+      "ash",
+      "nancy",
+      "steve",
+      "yui",
+      "zarina"
+    ]
+  }
+}

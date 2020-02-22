@@ -1,71 +1,36 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "../hooks/useParams";
+import { useData } from "../data";
 
 export const Shuffle = () => {
   const choice = useParams();
+  const { characters } = useData();
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const pickRandom = c => setCharacter(c[Math.floor(Math.random() * c.length)]);
   const [character, setCharacter] = useState(
-    `Click to choose a random ${choice.charAt(0).toUpperCase() +
-      choice.slice(1)}`
+    `Click to choose a random ${cap(choice)}`
   );
-  const killer = [
-    "trapper",
-    "wraith",
-    "hillbilly",
-    "nurse",
-    "michael",
-    "hag",
-    "doctor",
-    "huntress",
-    "bubba",
-    "freddy",
-    "pig",
-    "clown",
-    "spirit",
-    "legion",
-    "plague",
-    "ghost face",
-    "demogorgon",
-    "oni",
-    "deathslinger"
-  ];
-  const survivor = [];
-  const pickRandom = characters =>
-    setCharacter(characters[Math.floor(Math.random() * characters.length)]);
   return (
     <div style={{ width: "100%" }}>
       <div className="nes-container">
         <div className="nes-container is-rounded is-dark is-centered with-title">
-          <p style={{ textTransform: "capitalize" }} className="title">
-            Shuffling {choice}'s
-          </p>
+          <p className="title">Shuffling {cap(choice)}'s</p>
           <button
-            style={{ textTransform: "capitalize" }}
-            onClick={() => pickRandom(choice === "killer" ? killer : survivor)}
+            onClick={() => pickRandom(characters[choice])}
             className="nes-btn is-primary"
           >
-            Shuffle {choice}!
+            Shuffle {cap(choice)}!
           </button>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
+          <div className="char-container">
             {character === "spirit" && (
               <img
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  margin: "2rem 0"
-                }}
+                className="character"
                 src={require("../assets/spirit.png")}
                 alt="spooky spirit"
               />
             )}
-            <h1 className="nes-text is-primary">{character}</h1>
+            <h1 className="nes-text is-primary">{cap(character)}</h1>
           </div>
         </div>
       </div>
