@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import { DataProvider } from "./data";
 import App from "./App";
 
+import "./font/PressStart2P-Regular.ttf";
+import "./nes.css";
 import "./index.css";
 
 ReactDOM.render(

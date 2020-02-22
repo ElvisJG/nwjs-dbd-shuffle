@@ -1,12 +1,19 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: local("Press Start 2P") url(./font/PressStart2P-Regular.ttf)
+    format("truetype");
+}
+
 #root {
   background-color: #444;
   width: 100vw;
   height: 100vh;
 }
 
-* {
-  font-family: "Squada One";
+html,
+body {
   letter-spacing: 2px;
+  font-family: "Press Start 2P";
 }
 
 .nav-container {
