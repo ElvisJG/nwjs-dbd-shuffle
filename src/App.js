@@ -1,17 +1,27 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { useData } from "./data";
+import { useParams } from "./hooks/useParams";
 import { Shuffle } from "./components/Shuffle";
 import { Home } from "./components/Home";
-import { DataProvider } from "./data";
 
 const App = () => {
+  const {
+    characters: { survivor, killer }
+  } = useData();
+  const side = useParams();
+
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <DataProvider>
-        <Route path="/survivor" component={Shuffle} />
-        <Route path="/killer" component={Shuffle} />
-      </DataProvider>
+      <Route
+        path="/Survivor"
+        render={() => <Shuffle characters={survivor} side={side} />}
+      />
+      <Route
+        path="/Killer"
+        render={() => <Shuffle characters={killer} side={side} />}
+      />
     </Switch>
   );
 };
