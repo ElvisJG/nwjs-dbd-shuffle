@@ -69,25 +69,29 @@
         "Zarina": ["Off the Record", "Red Herring", "For the People"]
       },
       "killer": {
-        "Trapper": ["Unnerving Presence", "", ""],
-        "Wraith": ["", "", ""],
-        "Hillbilly": ["", "", ""],
-        "Nurse": ["", "", ""],
-        "Michael": ["", "", ""],
-        "Hag": ["", "", ""],
-        "Doctor": ["", "", ""],
-        "Huntress": ["", "", ""],
-        "Bubba": ["", "", ""],
-        "Freddy": ["", "", ""],
-        "Pig": ["", "", ""],
-        "Clown": ["", "", ""],
-        "Spirit": ["", "", ""],
-        "Legion": ["", "", ""],
-        "Plague": ["", "", ""],
-        "Ghost Face": ["", "", ""],
-        "Demogorgon": ["", "", ""],
-        "Oni": ["", "", ""],
-        "Deathslinger": ["", "", ""]
+        "Trapper": ["Unnerving Presence", "Brutal Strength", "Agitation"],
+        "Wraith": ["Predator", "Bloodhound", "Shadowborn"],
+        "Hillbilly": ["Enduring", "Lightborn", "Tinkerer"],
+        "Nurse": ["Stridor", "Thanatophobia", "Nurses Calling"],
+        "Michael": ["STBFL", "PWYF", "Dying Light"],
+        "Hag": ["Third Seal", "Ruin", "Devour Hope"],
+        "Doctor": ["Overwhelming Presence", "Monitor and Abuse", "Overcharge"],
+        "Huntress": [
+          "Beasts of Prey",
+          "Territorial Imperative",
+          "Huntress Lullaby"
+        ],
+        "Bubba": ["Knockout", "BBQ", "Franklins"],
+        "Freddy": ["Fire Up", "Remember Me", "Blood Warden"],
+        "Pig": ["Hangmans", "Surveillance", "Make Your Choice"],
+        "Clown": ["Bamboozle", "Clownphobia", "Pop"],
+        "Spirit": ["Spirit Fury", "Haunted Ground", "Rancor"],
+        "Legion": ["Discord", "Mad Grit", "Iron Maiden"],
+        "Plague": ["Corrupt", "Infectious", "Devotion"],
+        "Ghost Face": ["All Ears", "Thrilling", "Furtive"],
+        "Demogorgon": ["Surge", "Limits", "Mindbreaker"],
+        "Oni": ["Zanshin", "Blood Echo", "Nemesis"],
+        "Deathslinger": ["Gearhead", "DMS", "Ret"]
       }
     }
   }
