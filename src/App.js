@@ -7,7 +7,7 @@ import { Home } from "./components/Home";
 
 const App = () => {
   const {
-    characters: { survivor, killer }
+    data: { survivor, killer, perks }
   } = useData();
   const side = useParams();
 
@@ -16,11 +16,13 @@ const App = () => {
       <Route exact path="/" component={Home} />
       <Route
         path="/Survivor"
-        render={() => <Shuffle characters={survivor} side={side} />}
+        render={() => (
+          <Shuffle characters={survivor} side={side} perks={perks} />
+        )}
       />
       <Route
         path="/Killer"
-        render={() => <Shuffle characters={killer} side={side} />}
+        render={() => <Shuffle characters={killer} side={side} perks={perks} />}
       />
     </Switch>
   );

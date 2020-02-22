@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CharacterInfo } from "./CharacterInfo";
+import { CharacterImg } from "./CharacterImg";
 
-export const Shuffle = ({ characters, side }) => {
+export const Shuffle = ({ characters, side, perks }) => {
+  const sideSelector = side.toLowerCase();
+  console.log(side);
   const shuffle = characters;
   const theme = side === "Killer" ? "error" : "success";
   const pickRandom = c => setCharacter(c[Math.floor(Math.random() * c.length)]);
@@ -22,7 +25,17 @@ export const Shuffle = ({ characters, side }) => {
             Shuffle {side}!
           </button>
           <div className="char-container">
-            <CharacterInfo character={character} theme={theme} />
+            {!character.includes("random") && (
+              <>
+                <CharacterImg character={character} side={side} />
+                <CharacterInfo
+                  character={character}
+                  theme={theme}
+                  side={side}
+                  perks={perks[sideSelector]}
+                />
+              </>
+            )}
           </div>
           <Link to="/" className={`nes-text is-${theme} back`}>
             Home

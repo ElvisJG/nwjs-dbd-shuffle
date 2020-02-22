@@ -1,5 +1,5 @@
 {
-  "characters": {
+  "data": {
     "killer": [
       "Trapper",
       "Wraith",
@@ -33,7 +33,7 @@
       "Feng",
       "David",
       "Quentin",
-      "David",
+      "Tapp",
       "Kate",
       "Adam",
       "Jeff",
@@ -43,6 +43,52 @@
       "Steve",
       "Yui",
       "Zarina"
-    ]
+    ],
+    "perks": {
+      "survivor": {
+        "Dwight": ["Bond", "Prove Thyself", "Leader"],
+        "Meg": ["Quick & Quiet", "Sprint Burst", "Adrenaline"],
+        "Claudette": ["Empathy", "Botany Knowledge", "Self-Care"],
+        "Jake": ["Iron Will", "Calm Spirit", "Saboteur"],
+        "Nea": ["Balanced Landing", "Urban Evasion", "Streetwise"],
+        "Laurie": ["Sole Survivor", "Object of Obsession", "Decisive Strike"],
+        "Ace": ["Open-Handed", "Up the Ante", "Ace in the Hole"],
+        "Bill": ["Left Behind", "Borrowed Time", "Unbreakable"],
+        "Feng": ["Technician", "Lithe", "Alert"],
+        "David": ["We're Gonna Live Forever", "Dead Hard", "No Mither"],
+        "Quentin": ["Wake Up!", "Pharmacy", "Vigil"],
+        "Tapp": ["Tenacity", "Detective's Hunch", "Stake Out"],
+        "Kate": ["Dance With Me", "Windows of Opportunity", "Boil Over"],
+        "Adam": ["Diversion", "Deliverance", "Autodidact"],
+        "Jeff": ["Breakdown", "Aftercare", "Distortion"],
+        "Jane": ["Solidarity", "Poised", "Head On"],
+        "Ash": ["Flip-Flop", "Buckle Up", "Mettle of Man"],
+        "Nancy": ["Better Together", "Fixated", "Inner Strength"],
+        "Steve": ["Babysitter", "Comaraderie", "Second Wind"],
+        "Yui": ["Lucky Break", "Any Means Necessary", "Breakout"],
+        "Zarina": ["Off the Record", "Red Herring", "For the People"]
+      },
+      "killer": {
+        "Trapper": ["", "", ""],
+        "Wraith": ["", "", ""],
+        "Hillbilly": ["", "", ""],
+        "Nurse": ["", "", ""],
+        "Michael": ["", "", ""],
+        "Hag": ["", "", ""],
+        "Doctor": ["", "", ""],
+        "Huntress": ["", "", ""],
+        "Bubba": ["", "", ""],
+        "Freddy": ["", "", ""],
+        "Pig": ["", "", ""],
+        "Clown": ["", "", ""],
+        "Spirit": ["", "", ""],
+        "Legion": ["", "", ""],
+        "Plague": ["", "", ""],
+        "Ghost Face": ["", "", ""],
+        "Demogorgon": ["", "", ""],
+        "Oni": ["", "", ""],
+        "Deathslinger": ["", "", ""]
+      }
+    }
   }
 }
