@@ -19,7 +19,7 @@
       "Ghost Face",
       "Demogorgon",
       "Oni",
-      "Deathslinger"
+      "Slinger"
     ],
     "survivor": [
       "Dwight",
@@ -91,7 +91,7 @@
         "Ghost Face": ["All Ears", "Thrilling", "Furtive"],
         "Demogorgon": ["Surge", "Limits", "Mindbreaker"],
         "Oni": ["Zanshin", "Blood Echo", "Nemesis"],
-        "Deathslinger": ["Gearhead", "DMS", "Ret"]
+        "Slinger": ["Gearhead", "DMS", "Ret"]
       }
     }
   }
